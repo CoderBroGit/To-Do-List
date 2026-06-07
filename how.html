@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How it works — FocusTrack</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;500;700;800;900&family=Satoshi:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="landing.css" />
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-mark">◎</span>
+      <span class="logo-text">FocusTrack</span>
+    </a>
+    <div class="nav-links">
+      <a href="how.html" class="active">How it works</a>
+      <a href="why.html">Why us</a>
+      <a href="stories.html">Stories</a>
+    </div>
+    <div class="nav-cta">
+      <a href="auth.php" class="btn-nav">Start free →</a>
+    </div>
+    <button class="nav-burger" id="burger" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="how.html">How it works</a>
+    <a href="why.html">Why us</a>
+    <a href="stories.html">Stories</a>
+    <a href="auth.php" class="btn-mobile-cta">Start free →</a>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="blob blob-a" style="opacity:.4"></div>
+    <div class="page-hero-inner">
+      <div class="section-eyebrow">how it works</div>
+      <h1 class="page-headline">
+        No tutorial needed.<br/>
+        But here's one anyway.
+      </h1>
+      <p class="page-sub">FocusTrack is designed to be stupidly simple. Here's the full breakdown of what happens when you sign up.</p>
+    </div>
+  </section>
+
+  <!-- Steps walkthrough -->
+  <section class="walkthrough">
+    <div class="walk-inner">
+
+      <div class="walk-step">
+        <div class="walk-num">01</div>
+        <div class="walk-content">
+          <div class="walk-text">
+            <h2>Sign up in literally 10 seconds</h2>
+            <p>No onboarding flow. No "tell us your role, company size, use case." Just your name and email. We're not here to collect data, we're here to help you focus.</p>
+            <ul class="walk-list">
+              <li>✓ No credit card required</li>
+              <li>✓ No spam emails</li>
+              <li>✓ No dark patterns</li>
+            </ul>
+          </div>
+          <div class="walk-visual">
+            <div class="mini-card">
+              <div class="mini-card-header">Create your account</div>
+              <div class="mini-field">
+                <label>Name</label>
+                <div class="mini-input">Shuvendu Nayak</div>
+              </div>
+              <div class="mini-field">
+                <label>Email</label>
+                <div class="mini-input">shuvendu@example.com</div>
+              </div>
+              <div class="mini-btn">Let's go →</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="walk-step reverse">
+        <div class="walk-num">02</div>
+        <div class="walk-content">
+          <div class="walk-visual">
+            <div class="mini-card">
+              <div class="mini-card-header">Add your tasks</div>
+              <div class="mini-tasks-list">
+                <div class="mini-task">📚 Read chapter 5</div>
+                <div class="mini-task">✍️ Write assignment</div>
+                <div class="mini-task">📧 Email professor</div>
+              </div>
+              <div class="mini-add-row">
+                <div class="mini-add-input">What's next?</div>
+                <div class="mini-add-btn">+</div>
+              </div>
+            </div>
+          </div>
+          <div class="walk-text">
+            <h2>Dump your brain into the app</h2>
+            <p>Add everything you need to do — big tasks, small tasks, "I should probably do this" tasks. FocusTrack doesn't judge your list length. It just organises it into a clean visual roadmap.</p>
+            <ul class="walk-list">
+              <li>✓ No limit on tasks</li>
+              <li>✓ Reorder anytime</li>
+              <li>✓ Delete what doesn't matter</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="walk-step">
+        <div class="walk-num">03</div>
+        <div class="walk-content">
+          <div class="walk-text">
+            <h2>Watch the progress ring fill up</h2>
+            <p>Every time you check off a task, the progress ring animates. The percentage updates. The feedback message changes. It's designed to be satisfying — because you deserve to feel good about what you're doing.</p>
+            <ul class="walk-list">
+              <li>✓ Real-time progress tracking</li>
+              <li>✓ Dynamic motivational messages</li>
+              <li>✓ Visual roadmap timeline</li>
+            </ul>
+          </div>
+          <div class="walk-visual">
+            <div class="mini-card progress-card-mini">
+              <div class="mini-progress-ring">
+                <svg viewBox="0 0 100 100">
+                  <circle cx="50" cy="50" r="38" class="ring-bg"/>
+                  <circle cx="50" cy="50" r="38" class="ring-fill"
+                          stroke-dasharray="239" stroke-dashoffset="72"
+                          style="stroke:#34d399"/>
+                </svg>
+                <div class="mini-ring-label">
+                  <span>70%</span>
+                  <small>done</small>
+                </div>
+              </div>
+              <div class="mini-msg">🔥 Almost there! One last push.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="walk-step reverse">
+        <div class="walk-num">04</div>
+        <div class="walk-content">
+          <div class="walk-visual">
+            <div class="mini-card roadmap-card-mini">
+              <div class="mini-card-header">Your Roadmap</div>
+              <div class="mini-timeline">
+                <div class="mt-line done">
+                  <div class="mt-dot">✓</div>
+                  <span>Research topic</span>
+                </div>
+                <div class="mt-line done">
+                  <div class="mt-dot">✓</div>
+                  <span>Draft outline</span>
+                </div>
+                <div class="mt-line active">
+                  <div class="mt-dot pulse-dot">3</div>
+                  <span>Write first draft</span>
+                  <span class="now-badge">now</span>
+                </div>
+                <div class="mt-line">
+                  <div class="mt-dot empty-dot">4</div>
+                  <span>Submit final</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="walk-text">
+            <h2>The Roadmap: see the full journey</h2>
+            <p>FocusTrack visualises your tasks as a journey — a timeline that shows where you are, what's done, and what's ahead. It's the difference between "I have so much to do" and "I'm on step 3 of 4."</p>
+            <ul class="walk-list">
+              <li>✓ Sequential task view</li>
+              <li>✓ Current step highlighted</li>
+              <li>✓ Satisfying completion animation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Mini CTA -->
+  <section class="mini-cta">
+    <div class="mini-cta-inner">
+      <h2>Ready to try it?</h2>
+      <p>No setup. No onboarding. Just focus.</p>
+      <a href="auth.php" class="btn-cta-main">Start for free →</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark">◎</span>
+        <span class="logo-text">FocusTrack</span>
+        <p>Built for students who have a lot going on.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="how.html">How it works</a>
+          <a href="why.html">Why FocusTrack</a>
+          <a href="auth.php">Sign up</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="stories.html">Stories</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 FocusTrack. Made with ☕ and way too many to-do lists.</p>
+    </div>
+  </footer>
+
+  <script src="landing.js"></script>
+</body>
+</html>

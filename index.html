@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FocusTrack — Actually get stuff done.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;500;700;800;900&family=Satoshi:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="landing.css" />
+</head>
+<body>
+
+  <!-- ── NAV ──────────────────────────────────────────────── -->
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-mark">◎</span>
+      <span class="logo-text">FocusTrack</span>
+    </a>
+    <div class="nav-links">
+      <a href="how.html">How it works</a>
+      <a href="why.html">Why us</a>
+      <a href="stories.html">Stories</a>
+    </div>
+    <div class="nav-cta">
+      <a href="auth.php" class="btn-nav">Start free →</a>
+    </div>
+    <button class="nav-burger" id="burger" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="how.html">How it works</a>
+    <a href="why.html">Why us</a>
+    <a href="stories.html">Stories</a>
+    <a href="auth.php" class="btn-mobile-cta">Start free →</a>
+  </div>
+
+  <!-- ── HERO ─────────────────────────────────────────────── -->
+  <section class="hero">
+
+    <!-- Noise overlay -->
+    <div class="hero-noise"></div>
+
+    <!-- Floating blobs -->
+    <div class="blob blob-a"></div>
+    <div class="blob blob-b"></div>
+    <div class="blob blob-c"></div>
+
+    <!-- Ticker tape -->
+    <div class="ticker-wrap">
+      <div class="ticker">
+        <span>stop doom scrolling</span><span>◆</span>
+        <span>actually focus</span><span>◆</span>
+        <span>your goals aren't going to chase themselves</span><span>◆</span>
+        <span>built for students &amp; professionals</span><span>◆</span>
+        <span>stop doom scrolling</span><span>◆</span>
+        <span>actually focus</span><span>◆</span>
+        <span>your goals aren't going to chase themselves</span><span>◆</span>
+        <span>built for students &amp; professionals</span><span>◆</span>
+        <span>stop doom scrolling</span><span>◆</span>
+        <span>actually focus</span><span>◆</span>
+        <span>your goals aren't going to chase themselves</span><span>◆</span>
+        <span>built for students &amp; professionals</span><span>◆</span>
+      </div>
+    </div>
+
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-badge">✦ free forever for students</div>
+        <h1 class="hero-headline">
+          Your brain<br/>
+          <span class="headline-swap" id="swapWord">deserves better</span><br/>
+          than Instagram.
+        </h1>
+        <p class="hero-sub">
+          FocusTrack is the productivity app built for people who know they
+          should be working but somehow end up watching 47 reels.
+          Track tasks. Kill procrastination. Actually finish things.
+        </p>
+        <div class="hero-actions">
+          <a href="auth.php" class="btn-hero-primary">
+            Get started — it's free
+            <span class="btn-icon">→</span>
+          </a>
+          <a href="how.html" class="btn-hero-ghost">
+            See how it works
+          </a>
+        </div>
+        <div class="hero-social-proof">
+          <div class="avatars">
+            <img src="https://i.pravatar.cc/40?img=1" alt="user" />
+            <img src="https://i.pravatar.cc/40?img=2" alt="user" />
+            <img src="https://i.pravatar.cc/40?img=3" alt="user" />
+            <img src="https://i.pravatar.cc/40?img=4" alt="user" />
+            <img src="https://i.pravatar.cc/40?img=5" alt="user" />
+          </div>
+          <p><strong>2,400+</strong> students &amp; pros already focusing</p>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <!-- App mockup card -->
+        <div class="mockup-card">
+          <div class="mockup-header">
+            <div class="mockup-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <span class="mockup-title">Today's focus</span>
+          </div>
+          <div class="mockup-greeting">Good morning, Shuvendu 👋</div>
+          <div class="mockup-progress-ring">
+            <svg viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="40" class="ring-bg"/>
+              <circle cx="50" cy="50" r="40" class="ring-fill" id="heroRing"
+                      stroke-dasharray="251" stroke-dashoffset="80"/>
+            </svg>
+            <div class="ring-label">
+              <span class="ring-pct">68%</span>
+              <span class="ring-sub">done</span>
+            </div>
+          </div>
+          <div class="mockup-tasks">
+            <div class="mt done">
+              <span class="mt-check">✓</span>
+              <span>Review lecture notes</span>
+            </div>
+            <div class="mt done">
+              <span class="mt-check">✓</span>
+              <span>Submit assignment draft</span>
+            </div>
+            <div class="mt active">
+              <span class="mt-check pulse"></span>
+              <span>Read chapter 5</span>
+              <span class="mt-tag">in progress</span>
+            </div>
+            <div class="mt">
+              <span class="mt-check empty"></span>
+              <span>Study for quiz</span>
+            </div>
+            <div class="mt">
+              <span class="mt-check empty"></span>
+              <span>Reply to prof email</span>
+            </div>
+          </div>
+          <div class="mockup-msg">🔥 You're halfway there! Keep going.</div>
+        </div>
+
+        <!-- Floating badges -->
+        <div class="float-badge float-1">
+          <span>🎯</span> 4 tasks crushed today
+        </div>
+        <div class="float-badge float-2">
+          <span>⚡</span> Focus streak: 7 days
+        </div>
+        <div class="float-badge float-3">
+          <span>🧠</span> No doom scrolling since 9am
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll cue -->
+    <div class="scroll-cue">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ── LOGOS / TRUST ─────────────────────────────────────── -->
+  <section class="trust-bar">
+    <p class="trust-label">trusted by students at</p>
+    <div class="trust-logos">
+      <span>IIT Bombay</span>
+      <span>•</span>
+      <span>Delhi University</span>
+      <span>•</span>
+      <span>BITS Pilani</span>
+      <span>•</span>
+      <span>VIT</span>
+      <span>•</span>
+      <span>NIT Rourkela</span>
+      <span>•</span>
+      <span>Manipal</span>
+    </div>
+  </section>
+
+  <!-- ── PROBLEM SECTION ───────────────────────────────────── -->
+  <section class="problem">
+    <div class="problem-inner">
+      <div class="problem-text">
+        <div class="section-eyebrow">the real problem</div>
+        <h2 class="section-headline">
+          You're not lazy.<br/>
+          You're <em>overwhelmed.</em>
+        </h2>
+        <p>
+          The average student checks their phone 96 times a day. That's once
+          every 10 minutes. Your attention is being sold to the highest bidder
+          while your deadlines sneak closer.
+        </p>
+        <p>
+          FocusTrack doesn't judge you. It just quietly helps you build the
+          habit of finishing things — one task at a time.
+        </p>
+        <a href="why.html" class="btn-text-link">
+          See why it works →
+        </a>
+      </div>
+      <div class="problem-stats">
+        <div class="stat-card">
+          <span class="stat-num">96×</span>
+          <span class="stat-label">avg phone checks per day</span>
+        </div>
+        <div class="stat-card accent">
+          <span class="stat-num">2.5h</span>
+          <span class="stat-label">lost to doom scrolling daily</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">73%</span>
+          <span class="stat-label">of students procrastinate regularly</span>
+        </div>
+        <div class="stat-card accent-2">
+          <span class="stat-num">0min</span>
+          <span class="stat-label">needed to set up FocusTrack</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FEATURES BENTO ────────────────────────────────────── -->
+  <section class="features">
+    <div class="features-inner">
+      <div class="section-eyebrow">what you get</div>
+      <h2 class="section-headline">Everything. Nothing extra.</h2>
+      <div class="bento">
+
+        <div class="bento-card bento-big">
+          <div class="bento-icon">🗺️</div>
+          <h3>Visual Roadmap</h3>
+          <p>See your entire plan laid out like a journey. Each task is a checkpoint. Completion feels like levelling up.</p>
+          <div class="bento-visual roadmap-mini">
+            <div class="rm-step done">01 Research topic</div>
+            <div class="rm-step done">02 Make outline</div>
+            <div class="rm-step active">03 Write draft →</div>
+            <div class="rm-step">04 Edit & submit</div>
+          </div>
+        </div>
+
+        <div class="bento-card bento-tall">
+          <div class="bento-icon">⚡</div>
+          <h3>Real-time Progress</h3>
+          <p>Watch your percentage climb as you check things off. Dopamine hits, guaranteed.</p>
+          <div class="bento-ring-mini">
+            <svg viewBox="0 0 80 80">
+              <circle cx="40" cy="40" r="30" class="ring-bg"/>
+              <circle cx="40" cy="40" r="30" class="ring-fill"
+                      stroke-dasharray="188" stroke-dashoffset="56"
+                      style="stroke:#a78bfa"/>
+            </svg>
+            <span>70%</span>
+          </div>
+        </div>
+
+        <div class="bento-card bento-wide">
+          <div class="bento-icon">💬</div>
+          <h3>Smart Feedback</h3>
+          <p>FocusTrack reacts to your progress with messages that actually motivate — not generic "great job!" fluff.</p>
+          <div class="feedback-chips">
+            <span class="chip">🔥 You're on fire!</span>
+            <span class="chip">⚡ Halfway there!</span>
+            <span class="chip">🌟 You're a superstar!</span>
+            <span class="chip">✨ Fresh start!</span>
+          </div>
+        </div>
+
+        <div class="bento-card bento-small">
+          <div class="bento-icon">🔒</div>
+          <h3>Private by default</h3>
+          <p>Your tasks, your data. No ads. No tracking. No selling your attention.</p>
+        </div>
+
+        <div class="bento-card bento-small accent-card">
+          <div class="bento-icon">📱</div>
+          <h3>Works everywhere</h3>
+          <p>Browser, phone, tablet — FocusTrack follows your workflow.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── HOW IT WORKS TEASER ───────────────────────────────── -->
+  <section class="how-teaser">
+    <div class="how-inner">
+      <div class="section-eyebrow">simple by design</div>
+      <h2 class="section-headline">Three steps.<br/>That's literally it.</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <div class="step-body">
+            <h3>Sign up in 10 seconds</h3>
+            <p>No credit card. No onboarding calls. Just type your name and go.</p>
+          </div>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <div class="step-body">
+            <h3>Add your tasks</h3>
+            <p>Dump everything out of your brain. FocusTrack turns it into a clean roadmap.</p>
+          </div>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <div class="step-body">
+            <h3>Watch progress happen</h3>
+            <p>Check things off. Watch the ring fill up. Feel that sweet dopamine hit.</p>
+          </div>
+        </div>
+      </div>
+      <div class="how-cta">
+        <a href="how.html" class="btn-outline">Full walkthrough →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIALS ──────────────────────────────────────── -->
+  <section class="testimonials">
+    <div class="test-inner">
+      <div class="section-eyebrow">real people, real results</div>
+      <h2 class="section-headline">They stopped scrolling.<br/>So can you.</h2>
+      <div class="test-grid">
+
+        <div class="test-card">
+          <div class="test-stars">★★★★★</div>
+          <p>"I used to spend 3 hours planning and 0 hours doing. FocusTrack made me actually start."</p>
+          <div class="test-author">
+            <img src="https://i.pravatar.cc/40?img=10" alt="Asmit" />
+            <div>
+              <strong>Asmit M.</strong>
+              <span>IT student, BBSR</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="test-card featured-card">
+          <div class="test-stars">★★★★★</div>
+          <p>"The roadmap feature changed how I approach projects. I can literally see my deadline getting closer AND my progress catching up. No more panic mode."</p>
+          <div class="test-author">
+            <img src="https://i.pravatar.cc/40?img=20" alt="Susmita" />
+            <div>
+              <strong>Susmita S.</strong>
+              <span>Physics Honours, Odisha</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="test-card">
+          <div class="test-stars">★★★★★</div>
+          <p>"It's like having a productivity coach that doesn't lecture you. Just vibes and checkboxes."</p>
+          <div class="test-author">
+            <img src="https://i.pravatar.cc/40?img=30" alt="Swati" />
+            <div>
+              <strong>Swati S.</strong>
+              <span>CS student, Cuttack</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <a href="stories.html" class="btn-text-link center-link">Read all stories →</a>
+    </div>
+  </section>
+
+  <!-- ── FINAL CTA ─────────────────────────────────────────── -->
+  <section class="final-cta">
+    <div class="cta-noise"></div>
+    <div class="blob blob-cta-a"></div>
+    <div class="blob blob-cta-b"></div>
+    <div class="cta-inner">
+      <div class="cta-badge">✦ takes 10 seconds to start</div>
+      <h2 class="cta-headline">
+        Your most<br/>
+        <span class="cta-highlight">productive day</span><br/>
+        starts here.
+      </h2>
+      <p class="cta-sub">Stop saving the app for later. That's literally procrastinating on your anti-procrastination app.</p>
+      <a href="auth.php" class="btn-cta-main">
+        Create free account
+        <span>→</span>
+      </a>
+      <p class="cta-note">Free forever · No credit card · No BS</p>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark">◎</span>
+        <span class="logo-text">FocusTrack</span>
+        <p>Built for students who have a lot going on.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="how.html">How it works</a>
+          <a href="why.html">Why FocusTrack</a>
+          <a href="auth.php">Sign up</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="stories.html">Stories</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 FocusTrack. Made with ☕ and way too many to-do lists.</p>
+    </div>
+  </footer>
+
+  <script src="landing.js"></script>
+</body>
+</html>
